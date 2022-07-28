@@ -11,22 +11,20 @@ let eagleDef = 6;
 let dragonDef = 3;
 
 // Before the game fans decide to check their stats. Using an if-else statement, console.log whose offense is better.
-// if (eagleOff > dragonOff){
-//     console.log("The Emerald Eagles have a better offense than the Draconian Dragons.");
-// } else if (dragonOff > eagleOff){
-//     console.log("The Draconian Dragons have a better offense than the Emerald Eagles");
-
-
+if (eagleOff > dragonOff){
+    console.log("The Emerald Eagles have a better offense than the Draconian Dragons.");
+} else if (dragonOff > eagleOff){
+    console.log("The Draconian Dragons have a better offense than the Emerald Eagles");
 
 
 // What if we have a tie? Our code would actually say the Emerald Eagles have a better offense, which would be incorrect. Add an else if to resolve this.
-    if (dragonOff > eagleOff){
-        console.log("The Emerald Eagles have a better offense than the Draconian Dragons.");
-    } else if (eagleOff > dragonOff){
-        console.log("The Draconian Dragons have a better offense than the Emerald Eagles");
-    }else{
-        console.log("The two teams have the same offense ability");
-    } 
+if (dragonOff > eagleOff) {
+    console.log("The Draconian Dragons have a better offense than the Emerald Eagles.");
+} else if (eagleOff > dragonOff) {
+    console.log("The Emerald Eagles have a better offense than the Draconian Dragons.");
+} else {
+    console.log("The two teams have the same offense ability.");
+}
     // The games begins ! Create two variables to represent the starting score of the teams.
     
     let eagleScore = 0;
@@ -35,7 +33,7 @@ let dragonDef = 3;
     // The Dragons start with the ball — use an if/else to determine if the Eagles’ defense is enough to prevent them from scoring. If it is not enough, console.log “The Dragons have scored.” and update the score. Otherwise, console.log “The game continues".
 
     if (dragonOff > eagleDef){
-        console.log("The Dragons have scred.");
+        console.log("The Dragons have scored.");
         dragonScore = dragonScore + 1;
     }else {
         console.log ("The game continues.")
@@ -61,7 +59,7 @@ let dragonDef = 3;
 
 // let coinLandsHead = false;
 // if(coinLandsHead === true){
-//     console.log("The Dragons coach calls timeout");
+//     console.log("The Dragons coach calls timeout")
 // }else{
 //     console.log("Let's keep playing.");
 // }
@@ -95,8 +93,8 @@ for(let i = 1; i <= 5; i++){
 // console.log(dragonScore)
 // Add an if statement that will only let the Dragons make a goal if their offense ability is greater than the Eagles’ defense ability.
 if (dragonOff > eagleDef)
-while(dragonScore < 5){
-    
+    while(dragonScore < 5){ 
     dragonScore ++;
+    console.log(dragonScore)
 }
-console.log(dragonScore)
+}
